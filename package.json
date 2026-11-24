@@ -1,0 +1,28 @@
+{
+	"name": "agy-acp-bridge",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"description": "omp plugin: drive Google's official agy ACP server with omp's tools as MCP tools",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DeprecatedLuke/agy-acp-bridge.git"
+	},
+	"scripts": {
+		"lint": "biome check .",
+		"fmt": "biome check --write ."
+	},
+	"omp": {
+		"name": "agy-acp-bridge",
+		"version": "0.1.0",
+		"description": "AGY support for t3 code: agy ACP with omp tools over MCP, agy's own system prompt",
+		"extensions": [
+			"./src/index.ts"
+		]
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.6.2",
+		"@types/bun": "^1.4.4"
+	}
+}
